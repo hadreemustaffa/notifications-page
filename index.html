@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Notifications Page solution for frontendmentor.io Junior Challenge">
+  <meta name="description" content="Notificationss Page solution for frontendmentor.io Junior Challenge">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>FEM | Notifications Page</title>
 </head>
@@ -13,91 +16,94 @@
 <body>
   <main>
     <header>
-      <h1>Notifications <span>3</span></h1>
+      <h1 class="title">Notifications <span class="amount-new">3</span></h1>
       <button id="markAllAsReadBtn" type="button">Mark all as read</button>
     </header>
 
     <ul class="notifications">
-      <li class="notification__item new">
-        <img class="notification__item-icon" src="./assets/images/avatar-mark-webber.webp" alt="user icon">
-        <div class="notification__item-container">
-          <p class="notification__item-text">
-            <a href="#" class="notification__item-username">Mark Webber</a>
+      <li class="notifications__item new">
+        <img class="notifications__item-icon" src="./assets/images/avatar-mark-webber.webp" alt="user icon">
+        <div class="notifications__item-container">
+          <p class="notifications__item-text">
+            <a href="#" class="notifications__item-username">Mark Webber</a>
             reacted to your recent post
-            <a href="#" class="notification__item-post"> My first tournament today!</a>
+            <a href="#" class="notifications__item-post"> My first tournament today!</a>
           </p>
-          <p class="notification__item-timestamp">1m ago</p>
+          <p class="notifications__item-timestamp">1m ago</p>
         </div>
       </li>
 
-      <li class="notification__item new">
-        <img class="notification__item-icon" src="./assets/images/avatar-angela-gray.webp" alt="user icon">
-        <div class="notification__item-container">
-          <p class="notification__item-text">Angela Gray followed you</p>
-          <p class="notification__item-timestamp">5m ago</p>
+      <li class="notifications__item new">
+        <img class="notifications__item-icon" src="./assets/images/avatar-angela-gray.webp" alt="user icon">
+        <div class="notifications__item-container">
+          <p class="notifications__item-text">
+            <a href="#" class="notifications__item-username">Angela Gray</a>
+            followed you
+          </p>
+          <p class="notifications__item-timestamp">5m ago</p>
         </div>
       </li>
 
-      <li class="notification__item">
-        <img class="notification__item-icon" src="./assets/images/avatar-jacob-thompson.webp" alt="user icon">
-        <div class="notification__item-container">
-          <p class="notification__item-text">
-            <a href="#" class="notification__item-username">Jacob Thompson</a>
+      <li class="notifications__item new">
+        <img class="notifications__item-icon" src="./assets/images/avatar-jacob-thompson.webp" alt="user icon">
+        <div class="notifications__item-container">
+          <p class="notifications__item-text">
+            <a href="#" class="notifications__item-username">Jacob Thompson</a>
             has joined your group
-            <a href="#" class="notification__item-group"> Chess Club</a>
+            <a href="#" class="notifications__item-group"> Chess Club</a>
           </p>
-          <p class="notification__item-timestamp">1day ago</p>
+          <p class="notifications__item-timestamp">1day ago</p>
         </div>
       </li>
 
-      <li class="notification__item">
-        <img class="notification__item-icon" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="user icon">
-        <div class="notification__item-container">
-          <p class="notification__item-text">
-            <a href="#" class="notification__item-username">Rizky Hasanuddin</a>
+      <li class="notifications__item">
+        <img class="notifications__item-icon" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="user icon">
+        <div class="notifications__item-container">
+          <p class="notifications__item-text">
+            <a href="#" class="notifications__item-username">Rizky Hasanuddin</a>
             sent you a private message
           </p>
-          <p class="notification__item-timestamp">5days ago</p>
-          <p class="notification__item-message">
+          <p class="notifications__item-timestamp">5days ago</p>
+          <p class="notifications__item-message">
             Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
             I'm already having lots of fun and improving my game.
           </p>
         </div>
       </li>
 
-      <li class="notification__item">
-        <img class="notification__item-icon" src="./assets/images/avatar-kimberly-smith.webp" alt="user icon">
-        <div class="notification__item-container">
-          <p class="notification__item-text">
-            <a href="#" class="notification__item-username">Kimberly Smith</a>
+      <li class="notifications__item">
+        <img class="notifications__item-icon" src="./assets/images/avatar-kimberly-smith.webp" alt="user icon">
+        <div class="notifications__item-container">
+          <p class="notifications__item-text">
+            <a href="#" class="notifications__item-username">Kimberly Smith</a>
             commented on your picture
           </p>
-          <p class="notification__item-timestamp">1week ago</p>
+          <p class="notifications__item-timestamp">1week ago</p>
         </div>
-        <img class="notification__item-img" src="./assets/images/image-chess.webp" alt="">
+        <img class="notifications__item-img" src="./assets/images/image-chess.webp" alt="">
       </li>
 
-      <li class="notification__item new">
-        <img class="notification__item-icon" src="./assets/images/avatar-nathan-peterson.webp" alt="user icon">
-        <div class="notification__item-container">
-          <p class="notification__item-text">
-            <a href="#" class="notification__item-username">Nathan Peterson</a>
+      <li class="notifications__item">
+        <img class="notifications__item-icon" src="./assets/images/avatar-nathan-peterson.webp" alt="user icon">
+        <div class="notifications__item-container">
+          <p class="notifications__item-text">
+            <a href="#" class="notifications__item-username">Nathan Peterson</a>
             reacted to your recent post
-            <a href="#" class="notification__item-post"> 5 end-game strategies to increase your win rate</a>
+            <a href="#" class="notifications__item-post"> 5 end-game strategies to increase your win rate</a>
           </p>
-          <p class="notification__item-timestamp">2weeks ago</p>
+          <p class="notifications__item-timestamp">2weeks ago</p>
         </div>
       </li>
 
-      <li class="notification__item">
-        <img class="notification__item-icon" src="./assets/images/avatar-anna-kim.webp" alt="user icon">
-        <div class="notification__item-container">
-          <p class="notification__item-text">
-            <a href="#" class="notification__item-username">Anna Kim</a>
+      <li class="notifications__item">
+        <img class="notifications__item-icon" src="./assets/images/avatar-anna-kim.webp" alt="user icon">
+        <div class="notifications__item-container">
+          <p class="notifications__item-text">
+            <a href="#" class="notifications__item-username">Anna Kim</a>
             left the group
-            <a href="#" class="notification__item-group"> Chess Club</a>
+            <a href="#" class="notifications__item-group"> Chess Club</a>
           </p>
-          <p class="notification__item-timestamp">2weeks ago</p>
+          <p class="notifications__item-timestamp">2weeks ago</p>
         </div>
       </li>
     </ul>
