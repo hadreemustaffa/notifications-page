@@ -189,7 +189,6 @@ header {
 }
 button {
   background-color: transparent;
-  outline: transparent;
   border: transparent;
 }
 button:hover {
